@@ -9,6 +9,7 @@ import {AngularFirestoreModule} from '@angular/fire/firestore'
 import {AngularFireAuthModule} from '@angular/fire/auth'
 
 import { ClientService } from './services/client.service';
+import { AuthService } from './services/auth.service';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -49,7 +50,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     AngularFirestoreModule,
     AngularFireAuthModule
   ],
-  providers: [ClientService],
+  providers: [ClientService,AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
